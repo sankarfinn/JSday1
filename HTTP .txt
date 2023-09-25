@@ -1,0 +1,13 @@
+
+//                                          Difference between HTTP1.1 vs HTTP2
+HTTP stands for hypertext transfer protocol.
+HTTP/1.1 which was created in 1997.
+it is used in client server communication.
+By using HTTP user send the request to the server and the server send the responce to the user. because it went through several stage of development, this first version of http was called http/1.1. 
+ 
+HTTP/2 which was created 2015.in particular http/2 is much faster and more efficient than http/1.1. one of the ways in which http/2 is faster is in how it prioritizes content during the loading process. 
+
+http /1.1 loads resources one after the other,so if one resources cannot be loaded,it blocks all the other resources behind it.in contrast http/2 is able to use a single tcp connection to send multiple streams of data at once so that no one resourse blocks any other resources. 
+http/2 does this by splitting data into binary-code messages and numbering these messages so that the client knows which stream each binary message belongs to.
+ 
+small files load more quickly than large ones.to speed up web performance both http/1.1 and http/2 compress http messages to make them smaller. however http/2 uses a more advanced compression method called hpack that eliminates redundant information in http header packets.this eliminatesa few bytes from every http packet.Given the volume of HTTP packets involved in loading even a single webpage, those bytes add up quickly, resulting in faster loading.
